@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Index</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/Unirse.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/EstiloSlider.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<script src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body  ng-controller="unir">
+	<main onload="UNIR()">
+		<div class="u">
+			Unirse a Grupo
+		</div>
+		<div class="Busqueda">
+			<div class="bus">
+					<input  type="search" name="busqueda" value="" placeholder="Buscar Curso">
+					<button class="boton2" type="button" name="button" >Buscar</button>
+			</div>
+ 		</div>
+		<div class="VistaCursos">
+				<button class="accordion" ng-repeat="x in records" >{{x}}</button>
+				<div class="panel">
+	  		<p>{{x.nombre}}.</p>
+            <p>{{x.fecha}}.</p>
+            <p>{{x.hora}}.</p>
+            <p>{{x.lugar}}.</p>
+            <p>{{x.descripcion}}.</p>
+				</div>
+				<script src="js/Acordeon.js">
+				</script>
+			</div>
+	</main>
+
+	    <script src="js/jquery.min.js"></script>
+	    <script src="js/headroom.min.js"></script>
+	    <script src="js/menu.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+ var app = angular.module("myapp",[]);  
+ app.controller("formController", function($scope, $http){  
+      $scope.insertData = function(){  
+        method: "post",
+        url: window.location.href + "insert.php",
+        data: { 
+               nombre:$scope.nombre,
+               apellido:$scope.apellido,
+               telefono:$scope.telefono,
+               codigo:$scope.codigo,
+               correo':$scope.correo},
+            
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
+                //alert(data);  
+                /*$scope.nombre = null;  
+                $scope.apellido = null;
+                $scope.telefono = null;
+                $scope.codigo = null;
+                $scope.correo = null;  */
+           });  
+      }  
+ });  

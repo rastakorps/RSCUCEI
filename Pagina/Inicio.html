@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html ng-app="myapp3">
+<head>
+	<meta charset="utf-8">
+	<title>Pagina Principal</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/EstiloInicio.css">
+	<link rel="stylesheet" href="css/EstiloSlider.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+	<script src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<header id="header">
+	    <nav class="menu">
+	    	<div class="logo">
+	    	<a href="#"><img src="img/logo-libro.png" alt=""></a>
+	    	<a href="#" class="btn-menu" id="btn-menu"><i class="icono fa fa-bars" aria-hidden="true"></i></a>
+	        </div>
+
+	    	<div class="enlaces" id="enlaces">
+	    		<a href="#/inicio"><i class="fa fa-home" aria-hidden="true"></i> Inicio</a>
+                <a href="#/entrar"><i class="fa fa-sign-in" aria-hidden="true"></i> Entrar</a>
+		    	<a href="#/Registro"><i class="fa fa-user-plus" aria-hidden="true"></i> Registrarse</a>
+	    	</div>
+	    </nav>
+	</header>
+
+<header id="header2" style="display:none"  ng-controller="inicioController">
+	    <nav class="menu">
+	    	<div class="logo">
+	    	<a href="#"><img src="img/logo-libro.png" alt=""></a>
+	    	<a href="#" class="btn-menu" id="btn-menu"><i class="icono fa fa-bars" aria-hidden="true"></i></a>
+	        </div>
+            <div class="enlaces" id="enlaces"    ng-controller="inicioController">
+	    		<a href="#/inicio"><i class="fa fa-home" aria-hidden="true"></i> Inicio</a>
+	    		<a href="#/unirse"><i class="fa fa-file-text-o" aria-hidden="true"></i>Unirse a Grupo</a>
+	    		<a href="#/crearGrupo"><i class="fa fa-plus-circle" aria-hidden="true" id="nP"></i> Crear Grupo</a>
+	    		<a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i>{{datos.mensaje}}</a>
+                <a href="#"><i class="fa fa-file-o" aria-hidden="true"></i>Mis Cursos</a>
+                <a href="Inicio.html"><i class="fa fa-times-circle" aria-hidden="true"></i> Salir</a>
+	    	</div>
+  </nav>
+
+	</header>
+
+
+        
+		<div ng-view></div>
+
+	    <script src="js/headroom.min.js"></script>
+	    <script src="js/menu.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+        <script type="text/javascript" src="spa.js"></script>
+         
+       
+
+</body>
+</html>

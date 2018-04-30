@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Formulario de Registro</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
+  
+    
+ 
+</head>
+<body>
+
+    <div  class="container">
+        <div ng-controller="createController"> 
+            <form>
+                <label>Nombre(s):</label>
+                <input id="nombre" type="text" ng-model="nombre">
+                <br/>
+                <label>Apellido(s):</label>
+                <input id="apellido" type="text" ng-model="apellido">
+                <br />
+                <label>Telefono:</label>
+                <input id="telefono" type="text" ng-model="telefono">
+                <br />
+
+                <label>Codigo de alumno UDG:</label>
+                <input id="codigo" type="text" ng-model="codigo">
+                <br />
+
+                <label>Correo UDG Google</label>
+                <input id="correo"type="text" ng-model="correo">
+                <br />
+              
+                <button type="submit"ng-click="crearUsuario()">Registrar</button><br>
+
+            </form>
+        </div>
+   </div>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Crear Grupo</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+</head>
+<body>
+	<main ng-controller="Crear">
+          <div class="Caja1">
+              Crear Grupo
+          </div>
+	    	  <form method="post">
+            <label for="nombre">Nombre del Grupo: </label>
+	    	    <input ng-model="nombre" type="text" name="nombre" value="" placeholder="Nombre del Grupo" id="nombre">
+            <br>
+            <label for="fecha">Fecha:</label>
+            <input type="date" ng-model="fecha" id="fecha" placeholder="Selecciona la fecha">
+            <br>
+            <label>Hora:</label>
+            <select name="hora" ng-model="hora"> 
+                <option value="10:00:00">10:00:00</option>
+                <option value="11:00:00">11:00:00</option>
+                <option value="12:00:00">12:00:00</option>
+                <option value="01:00:00">01:00:00</option>
+                <option value="02:00:00">02:00:00</option>
+                <option value="03:00:00">03:00:00</option>
+                <option value="04:00:00">04:00:00</option>
+                <option value="05:00:00">05:00:00</option>
+                <option value="06:00:00">06:00:00</option>
+                <option value="07:00:00">07:00:00</option>
+            </select>
+            <br>
+            <label for="lugar">Lugar:</label>
+            <input type="text" ng-model="lugar"  placeholder="Escribe el lugar" id="lugar">
+            <br>
+            <label for="d">Descripcion</label>
+            <textarea ng-model="descripcion" placeholder="escribe una descripcion del curso" id="d"></textarea>
+            <br>
+           
+            <button class="boton"type="submit" ng-click="crearGrupo()">Crear</button><br>
+	    	  </form>
+	</main>
+
+	    <script src="js/jquery.min.js"></script>
+	    <script src="js/headroom.min.js"></script>
+	    <script src="js/menu.js"></script>
+        
+
+</body>
+</html>

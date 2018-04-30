@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/Login.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+	<main  ng-controller="postController">
+		<div class="Caja1">
+				Iniciar Sesión
+		</div>
+		<form method="post">
+			<label for="nombre">Usuario: </label>
+			<input ng-model="correo" type="text" name="nombre" value="" placeholder="Nombre de Usuario" id="nombre">
+			<br>
+			<label for="pass">Contraseña:</label>
+			<input type="password" ng-model="password" placeholder="Contraseña" id="pass">
+			<br>
+			<div class="ref">
+					<a href="#">¿Has olvidado tu contraseña?</a>
+                    <br>
+                    <br>
+                    <a title="google" href="#/correoUdg"><img src="img/google2.png" width="300" height="50" alt="google" /></a>            
+			</div>
+            <br>
+            <br>
+            <br>
+            <br>
+			<button class="boton"type="submit" ng-click="postForm()">Entrar</button><br>
+		</form>
+        
+	</main>
+	    <script src="js/jquery.min.js"></script>
+	    <script src="js/headroom.min.js"></script>
+	    <script src="js/menu.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Validar</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/Login.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+	<main  ng-controller="validarController">
+		<div class="Caja1">
+				Validar Sesión
+		</div>
+		<form method="post">
+			<label for="nombre">Ingresa tu correo UDG: </label>
+			<input ng-model="correo" type="text" name="correo2" value="" placeholder="Correo udg" id="correo2">
+			<br>
+            <label for="pass">Contraseña:</label>
+			<input type="password" ng-model="password" placeholder="Contraseña" id="pass">
+			<br>
+
+			<button class="boton"type="submit" ng-click="validarSesion()">Entrar</button><br>
+		</form>
+        
+	</main>
+	    <script src="js/jquery.min.js"></script>
+	    <script src="js/headroom.min.js"></script>
+	    <script src="js/menu.js"></script>
+
+</body>
+</html>
